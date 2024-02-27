@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ebbey_j_arpl3030a_task1_urbanrhythms_2024</title>
+  </head>
+  <style>
+    body {
+      background-color: rgba(
+        244,
+        244,
+        244,
+        0.7
+      ); /* Adjust the alpha channel (0.7) for opacity */
+      background: linear-gradient(
+          to bottom,
+          rgba(248, 248, 234, 0.9),
+          rgba(166, 166, 157, 0.7)
+        ),
+        url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/761/original/Screenshot_2024-02-26_at_21.48.57.png?1708977060");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-blend-mode: lighten;
+      position: relative;
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      size: 30px auto;
+      margin: 0 auto;
+      border-radius: 10px;
+      width: 400px;
+      height: 300px;
+      padding: 20px ;
+      border-radius: 25px;
+    }
+    h2 {
+      background-color: rgba(191, 12, 0, 0.7);
+      text-align: center;
+      color: rgb(226, 220, 208);
+      font-weight: 50px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      margin: 0px;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-block-size: 80px;
+      background-color: rgba(191, 12, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      padding: 20px;
+      padding-bottom: 0px;
+      font-weight: bolder;
+      font-style: italic;
+      font-size: 30px;
+      color: rgb(226, 220, 208);
+    }
+
+    .introduction {
+      text-align: center;
+      padding: 10px;
+      margin: 20px;
+      background-color: rgba(189, 24, 12, 1);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      margin-top: 10px;
+      margin: 0 auto;
+      padding-right: 10px;
+      padding-bottom: 0px;
+      padding-top: 0px auto;
+      margin-bottom: 30px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+    }
+    .pulses {
+      text-align: center;
+      padding: 10px;
+      margin: 20px;
+      background-color: rgba(171, 166, 156, 0.7);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      max-width: 1000px;
+      margin-top: 10px;
+      margin: 0 auto;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      margin-bottom: 30px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+    }
+
+    img::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: rgba(189, 24, 12, 0.7);
+      transform-origin: center;
+      transform: scale(0);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img:hover::before {
+      transform: scale(1.5);
+    }
+
+    img:hover {
+      background-color: rgba(189, 24, 12, 0.7);
+      box-shadow: 0 0 20px rgb(191, 12, 0);
+    }
+    .intro-text {
+      font-size: 100px;
+      text-align: justify;
+      text-align: center;
+      padding: 0px auto;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-weight: bold;
+      font-style: italic;
+      color: rgb(226, 220, 208);
+      padding-top: 0;
+    }
+    .introduction-text {
+      position: relative;
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-style: normal;
+      font-weight: lighter;
+      padding-left: 50px;
+      padding-right: 30px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      text-align: justify;
+      text-align: center;
+    }
+    .pulses-text {
+      position: relative;
+      z-index: 2;
+      color: rgb(191, 12, 0);
+      margin-right: 10px;
+      font-size: 50px;
+      font-style: italic;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-weight: 2000px;
+    }
+    .describe-text {
+      position: relative;
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-style: normal;
+      font-weight: lighter;
+      padding-left: 30px auto;
+      padding-top: 0px;
+    }
+    .introfiller-text {
+      position: relative;
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-style: normal;
+      font-weight: lighter;
+      padding-left: 50px;
+      padding-right: 30px;
+      padding-top: 0px;
+      text-align: justify;
+    }
+    .filler-text {
+      position: relative;
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-style: normal;
+      font-weight: lighter;
+      padding-left: 50px;
+      padding-right: 30px;
+      padding-top: 0px;
+      text-align: justify;
+    }
+    .footer {
+      font-size: small;
+      text-align: center;
+      padding: 10px ;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Urban Rhythms</h1>
+    </div>
+
+    <h2>
+      The Pulse of Johannesburg South
+    </h2>
+        <div class="introduction">
+      <h3 class="intro-text">
+        Johannesburg South
+        <br />
+        <p class="introfiller-text">
+          Explore Johannesburg South, where every street, business, and community engagement creates a living symphony of urban rhythms.
+          <br>
+          Nestled in the southern precincts of Johannesburg, South Africa, Johannesburg South encapsulates the vibrant pulse of the city's urban rhythms. This dynamic region, harmoniously blending residential, commercial, and cultural spaces, becomes a focal point for our exploration of the diverse beats that collectively compose the symphony of Johannesburg's southern landscapes.
+        </p>
+      </h3>
+      <img
+        class="image-container0"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/831/original/7F773159-06CE-4A3B-91AF-5E48AB79EE4C.JPEG?1709019950"
+        alt=""
+      />
+    </div>
+
+    <div class="pulses">
+      <h3 class="pulses-text">
+        City Beats:
+        <br />
+        <p class="describe-text">The Dynamic Tapestry of Joburg's Streets</p>
+        <p class="filler-text">
+          Discover the dynamic rhythm of Jozi's streets, where every avenue
+          tells a unique story. Explore the vibrancy as we celebrate the
+          pulsating energy and diverse narratives woven into Johannesburg's
+          urban fabric.
+        </p>
+      </h3>
+      <img
+        class="image-container1"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/831/original/7F773159-06CE-4A3B-91AF-5E48AB79EE4C.JPEG?1709019950"
+        alt=""
+      />
+    </div>
+<div class="pulses">
+      <h3 class="pulses-text">
+        Economic Beats:
+        <br />
+        <p class="describe-text">Each Business a Note in Joburg's Pulse</p>
+        <p class="filler-text">
+          From the lively hustle of street vendors offering vibrant goods to the inviting storefronts showcasing diverse offerings, businesses weave a dynamic tapestry. In Johannesburg, there's always a rhythmic connection within reach, each business playing a unique note in the city's vibrant economic symphony
+        </p>
+      </h3>
+      <img
+        class="image-container2"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/827/original/7BB055A4-7381-42D9-B4D1-6F9A5F2A458B_2.JPEG?1709019025"
+        alt=""
+      />
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var images = [
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/830/original/9B336FE8-22F3-4959-A55C-0673A379F048.JPEG?1709019937",
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/829/original/0677D4D6-D1B7-4633-AFBC-252C8B4F598A.JPEG?1709019924",
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/828/original/FF62A7AB-7CE7-4A2A-9802-F911636E91F6.JPEG?1709019910",
+        ]; // Add your image URLs
+        var imageIndex = 0;
+
+        function changeImage() {
+          document.querySelector(".image-container1").src = images[imageIndex];
+          imageIndex = (imageIndex + 1) % images.length;
+        }
+
+        setInterval(changeImage, 10000);
+      });
+            document.addEventListener("DOMContentLoaded", function () {
+        var images = [
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/826/original/1C93A55E-FBA9-405C-AD43-1A0E0ECCB2EF_2.JPEG?1709018998",
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/825/original/40DD4C2B-3B84-49C4-9280-3C072F7ECCFB_2.JPEG?1709018986",
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/824/original/B818E298-7E48-43DF-B995-B41DE953CB93.JPEG?1709018964",
+        ]; // Add your image URLs
+        var imageIndex = 0;
+
+        function changeImage() {
+          document.querySelector(".image-container2").src = images[imageIndex];
+          imageIndex = (imageIndex + 1) % images.length;
+        }
+
+        setInterval(changeImage, 10000);
+      });
+    </script>
+      <h2 class="footer">
+      Joy Ebbey | 2400652 | URBAN RHYTHMS | ARPL3030A | 2024
+    </h2>
+  </body>
+</html>
